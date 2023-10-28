@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    /* background-image: url("krishna.png"); */
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    padding: 20px;
+}
+h1{
+    margin: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+h1:hover{
+    color:brown;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+.card{
+    width: 32%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px black;
+    
+}
+.card:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px black);
+    transition: 0.5s;
+}
+.card:hover img{
+    filter: grayscale(0%);
+}
+
+
+.img1{
+    width: 350px;
+    height:350px;
+}
